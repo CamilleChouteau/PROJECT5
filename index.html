@@ -4,43 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0ec0fe392.js"
+      crossorigin="anonymous"
+    ></script>
     <title>IRL | Accueil</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
+      <a class="header_hyperlink" href="index.html">
+        <span class="material-symbols-outlined icon_nav"> menu </span></a
+      >
       <img
-        class="header_logo_hyperlink_image"
+        class="header_hyperlink_logo"
         src="images/LOGOS/LOGO_baseline.png"
         alt="logo IRL Museum"
       />
-      <h1>IRL Museum</h1>
     </header>
 
     <section class="expos">
-      <h2>Nos expositions</h2>
+      <h1 class="main_title">IRL Museum</h1>
+      <h2 class="title">Nos expositions</h2>
       <img
-        class="expos_img_sub"
+        class="expos_img"
         src="images/note-thanun-GI10ZiPO_3w-unsplash.jpg"
         alt="Photo d'expositions"
       />
-      <h3>En ce moment</h3>
-      <img
-        class="expos_img_sub"
-        src="images/alina-grubnyak-uhHPgq6QFgE-unsplash.jpg"
-        alt="Photo d'expositions"
-      />
-      <h3>Permanentes</h3>
+      <h3 class="title">En ce moment</h3>
+      <div class="expos_card">
+        <p class="expos_new">Nouveauté</p>
+        <img
+          class="expos_img"
+          src="images/alina-grubnyak-uhHPgq6QFgE-unsplash.jpg"
+          alt="Photo d'expositions"
+        />
+      </div>
+
+      <h4 class="title">Permanentes</h4>
       <img
         class="expos_img"
         src="images/werner-du-plessis-6dDHofabCQ8-unsplash.jpg"
         alt="Photo d'expositions"
       />
 
-      <button class="expos_btn">Découvrir nos expositions</button>
+      <a href="decouvrir.html" class="button">Découvrir nos expositions</a>
     </section>
 
     <section class="about">
-      <h2>Nos expositions</h2>
+      <h5 class="title">Nos expositions</h5>
       <img
         class="about_img"
         src="images/note-thanun-GI10ZiPO_3w-unsplash.jpg"
@@ -52,20 +69,34 @@
         artistiques innovantes et accessibles, offrant une expérience immersive
         à tous les visiteurs, quels que soient leurs besoins spécifiques.
       </p>
-      <button class="about_btn">A propos</button>
+      <a href="about.html" class="button">A propos</a>
     </section>
 
     <section class="localisation">
+      <h6 class="title">Où nous trouver ?</h6>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.4815863952463!2d-1.5695491062930709!3d47.20715854111049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685540994769!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       <p class="localisation_adress">
         IRL Museum 3 boulevard Léon Bruteau 42000 Nantes
       </p>
-      <button class="localisation_btn">Informations pratiques</button>
+      <a href="infos.html" class="button">Informations pratiques</a>
     </section>
 
     <footer class="footer">
-
-        <button class="contact_btn">Contact</button>
-        <p>2023 Copyright Camille Chouteau</p>
+      <a href="infos.html" class="button">Contact</a>
+      <a class="footer_hyperlink" href="index.html"
+        ><i class="fa-brands fa-instagram icon_nav"></i>Instagram</a
+      >
+      <a class="footer_hyperlink" href="index.html">Twitter</a>
+      <a class="footer_hyperlink" href="index.html">Facebook</a>
+      <p>2023 Copyright Camille Chouteau</p>
     </footer>
   </body>
 </html>
