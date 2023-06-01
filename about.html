@@ -4,20 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a0ec0fe392.js" crossorigin="anonymous"></script>
-    <title>IRL | A propos</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0ec0fe392.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>IRL | Accueil</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <script src="js/menu_burger.js"></script>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div id="root">
+        <div id="topnav" class="topnav">
+          <a id="home_link" class="topnav_link" href="index.html"
+            ><img
+              class="header_hyperlink_logo"
+              src="images/LOGOS/LOGO_baseline.png"
+              alt="logo IRL Museum"
+          /></a>
+
+          <!-- Classic Menu -->
+          <nav role="navigation" id="topnav_menu">
+            <a class="topnav_link" href="index.html">Accueil</a>
+            <a class="topnav_link" href="decouvrir.html">Découvrir</a>
+            <a class="topnav_link" href="about.html">A propos</a>
+            <a class="topnav_link" href="infos.html">Informations pratiques</a>
+          </nav>
+
+          <a
+            id="topnav_hamburger_icon"
+            href="javascript:void(0);"
+            onclick="showResponsiveMenu()"
+          >
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <!-- Responsive Menu -->
+          <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="decouvrir.html">Découvrir</a></li>
+              <li><a href="about.html">A propos</a></li>
+              <li><a href="infos.html">Informations pratiques</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <footer class="footer">
-        <button class="contact_btn">Contact</button>
-        <a class="footer_hyperlink" href="index.html">Instagram</a>
-        <a class="footer_hyperlink" href="index.html">Twitter</a>
-        <a class="footer_hyperlink" href="index.html">Facebook</a>
-        <p>2023 Copyright Camille Chouteau</p>
-      </footer>
+      <a href="infos.html" class="button">Contact</a>
+      <a class="footer_hyperlink" href="index.html"
+        ><i class="fa-brands fa-instagram icon_nav"></i>Instagram</a
+      >
+      <a class="footer_hyperlink" href="index.html"
+        ><i class="fa-brands fa-twitter icon_nav"></i>Twitter</a
+      >
+      <a class="footer_hyperlink" href="index.html"
+        ><i class="fa-brands fa-facebook icon_nav"></i>Facebook</a
+      >
+      <p class="footer_text">2023 Copyright Camille Chouteau</p>
+    </footer>
   </body>
 </html>

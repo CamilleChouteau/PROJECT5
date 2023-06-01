@@ -1,0 +1,65 @@
+.main_title {
+  padding: 4rem;
+  font-size: 4rem;
+  text-align: center;
+  font-family: font_bold;
+}
+
+.title {
+  padding: 2rem 0rem 3rem 0rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: font_medium;
+}
+
+.subtitle {
+  padding: 2rem 0rem 3rem 0rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.expos_new {
+  font-size: 1.7rem;
+  background-color: rgba(5, 3, 13, 0.4);
+  border-radius: 20px;
+  position: absolute;
+  right: 0px;
+  margin: 1rem 1rem 0rem 0rem;
+  padding: 1.1rem 2rem;
+}
+
+.expos_img {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.expos_btn_container {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- ABOUT ---- */
+
+.about {
+  margin: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_text {
+  text-align: center;
+  padding: 4rem;
+}
+
+/* ---- LOCALISATION ---- */
+
+.localisation {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.localisation_adress {
+  padding: 1rem 2rem;
+}

@@ -2,26 +2,24 @@
 :root {
   font-size: 62.5%;
 
-  --text_color: #ECE7D6;
-  --primary_color: #E34585;
-  --secondary_color: #70C7ED;
-  --tertiary_color: #6723B3;
+  --text_color: #ece7d6;
+  --primary_color: #e34585;
+  --secondary_color: #70c7ed;
+  --tertiary_color: #6723b3;
 
-
-  --background_color: #05030E;
-  --background_color_light: #15202F;
-
+  --background_color: #05030e;
+  --background_color_light: #15202f;
 }
 
 @font-face {
-    font-family: font_medium;
-    src: url(/fonts/ITCAvantGardeStdMd.otf);
+  font-family: font_medium;
+  src: url(/fonts/ITCAvantGardeStdMd.otf);
 }
 @font-face {
-    font-family: font_black;
-    src: url(/fonts/ITCAvantGardeStdBk.otf);
+  font-family: font_fine;
+  src: url(/fonts/ITCAvantGardeStdBk.otf);
 }
 @font-face {
-    font-family: font_bold;
-    src: url(/fonts/ITCAvantGardeStdBold.otf);
+  font-family: font_bold;
+  src: url(/fonts/ITCAvantGardeStdBold.otf);
 }

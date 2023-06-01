@@ -15,17 +15,50 @@
     <title>IRL | Accueil</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/menu_burger.js"></script>
   </head>
   <body>
     <header class="header">
-      <a class="header_hyperlink" href="index.html">
-        <span class="material-symbols-outlined icon_nav"> menu </span></a
-      >
-      <img
-        class="header_hyperlink_logo"
-        src="images/LOGOS/LOGO_baseline.png"
-        alt="logo IRL Museum"
-      />
+      <div id="root">
+        <div id="topnav" class="topnav">
+          <a id="home_link" class="topnav_link" href="index.html"
+            ><img
+              class="header_hyperlink_logo"
+              src="images/LOGOS/LOGO_baseline.png"
+              alt="logo IRL Museum"
+          /></a>
+
+          <!-- Classic Menu -->
+          <nav role="navigation" id="topnav_menu">
+            <a class="topnav_link" href="index.html">Accueil</a>
+            <a class="topnav_link" href="decouvrir.html">Découvrir</a>
+            <a class="topnav_link" href="about.html">A propos</a>
+            <a class="topnav_link" href="infos.html">Informations pratiques</a>
+          </nav>
+
+          <a
+            id="topnav_hamburger_icon"
+            href="javascript:void(0);"
+            onclick="showResponsiveMenu()"
+          >
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <!-- Responsive Menu -->
+          <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="decouvrir.html">Découvrir</a></li>
+              <li><a href="about.html">A propos</a></li>
+              <li><a href="infos.html">Informations pratiques</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <section class="expos">
@@ -36,7 +69,7 @@
         src="images/note-thanun-GI10ZiPO_3w-unsplash.jpg"
         alt="Photo d'expositions"
       />
-      <h3 class="title">En ce moment</h3>
+      <h3 class="subtitle">En ce moment</h3>
       <div class="expos_card">
         <p class="expos_new">Nouveauté</p>
         <img
@@ -46,21 +79,22 @@
         />
       </div>
 
-      <h4 class="title">Permanentes</h4>
+      <h4 class="subtitle">Permanentes</h4>
       <img
         class="expos_img"
         src="images/werner-du-plessis-6dDHofabCQ8-unsplash.jpg"
         alt="Photo d'expositions"
       />
-
-      <a href="decouvrir.html" class="button">Découvrir nos expositions</a>
+      <div class="expos_btn_container">
+        <a href="decouvrir.html" class="button">Découvrir nos expositions</a>
+      </div>
     </section>
 
     <section class="about">
-      <h5 class="title">Nos expositions</h5>
+      <h5 class="title">A propos du musée IRL</h5>
       <img
         class="about_img"
-        src="images/note-thanun-GI10ZiPO_3w-unsplash.jpg"
+        src="images/fe9a7468dad963d80c7c5e.webp"
         alt="Photo d'expositions"
       />
       <p class="about_text">
@@ -75,17 +109,16 @@
     <section class="localisation">
       <h6 class="title">Où nous trouver ?</h6>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.4815863952463!2d-1.5695491062930709!3d47.20715854111049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685540994769!5m2!1sfr!2sfr"
-        width="600"
-        height="450"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1355.2408836721652!2d-1.5646782!3d47.207155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685632925697!5m2!1sfr!2sfr"
+        width="400"
+        height="300"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-      <p class="localisation_adress">
-        IRL Museum 3 boulevard Léon Bruteau 42000 Nantes
-      </p>
+      <p class="localisation_adress">IRL Museum</p>
+      <p class="localisation_adress">3 boulevard Léon Bruteau 42000 Nantes</p>
       <a href="infos.html" class="button">Informations pratiques</a>
     </section>
 
@@ -94,9 +127,13 @@
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-instagram icon_nav"></i>Instagram</a
       >
-      <a class="footer_hyperlink" href="index.html">Twitter</a>
-      <a class="footer_hyperlink" href="index.html">Facebook</a>
-      <p>2023 Copyright Camille Chouteau</p>
+      <a class="footer_hyperlink" href="index.html"
+        ><i class="fa-brands fa-twitter icon_nav"></i>Twitter</a
+      >
+      <a class="footer_hyperlink" href="index.html"
+        ><i class="fa-brands fa-facebook icon_nav"></i>Facebook</a
+      >
+      <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>
 </html>
