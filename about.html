@@ -65,20 +65,20 @@
       <section class="hero_section">
         <img
           class="hero_section_img"
-          src="images/7189846b86e75e7e5ee00e.webp"
+          src="images/71899600c35d3fbe47c795.webp"
           alt="Photo d'expositions"
         />
         <h1 class="title">A propos</h1>
       </section>
 
       <section class="section_about">
-        <h2>Notre vision de l'art</h2>
+        <h2 class="subtitle">Notre vision de l'art</h2>
         <img
           class="hero_section_img"
           src="images/charlotte-coneybeer-JcJSeL3RmBY-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <p>
+        <p class="about_text">
           Le musée IRL met en valeur des créations artistiques innovantes et
           accessibles, offrant une expérience immersive à tous les visiteurs,
           quels que soient leurs besoins spécifiques. Notre collection d'art
@@ -86,13 +86,13 @@
           multisensorielle, avec des descriptions détaillées, des aides à la
           navigation et des outils de communication adaptés.
         </p>
-        <h2>Nos valeurs</h2>
+        <h2 class="subtitle">Nos valeurs</h2>
         <img
           class="hero_section_img"
           src="images/rodolfo-cuadros-WNk-f-TnZDw-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <p>
+        <p class="about_text">
           Nous sommes fiers de rendre l'art numérique accessible à tous, en
           créant un espace où l'expression artistique et l'inclusion se
           rencontrent harmonieusement. Que vous soyez passionné d'art digital ou
@@ -101,12 +101,46 @@
           où chacun est invité à explorer et à célébrer la beauté de l'art
           digital, sans aucune limitation.
         </p>
-        <a href="infos.html" class="button">Informations pratiques</a>
+        <a href="infos.html" class="button button_infos"
+          >Informations pratiques</a
+        >
       </section>
     </body>
 
     <footer class="footer">
-      <a href="infos.html" class="button">Contact</a>
+      <form>
+        <div class="container_text">
+          <h2 class="footer_subtitle">S'incrire à notre Newsletter</h2>
+          <p class="footer_subtext">
+            Inscrivez-vous à notre newsletter pour ne manquer aucun évènement,
+            concert ou exposition temporaire.
+          </p>
+        </div>
+
+        <div class="container_form">
+          <div class="form_area">
+            <input type="text" placeholder="Doe" name="lastname" required />
+            <input type="text" placeholder="John" name="firstame" required />
+            <input
+              type="text"
+              placeholder="johndoe@gmail.com"
+              name="mail"
+              required
+            />
+          </div>
+
+          <div class="form_button">
+            <label class="footer_subtext">
+              <input type="checkbox" checked="checked" name="subscribe" /> Daily
+              Newsletter
+            </label>
+            <button class="button_newslet" type="submit">
+              S'abonner à la newsletter
+            </button>
+          </div>
+        </div>
+      </form>
+
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-instagram icon"></i>Instagram</a
       >
@@ -116,6 +150,7 @@
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-facebook icon"></i>Facebook</a
       >
+      <a href="infos.html" class="button">Contact</a>
       <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>

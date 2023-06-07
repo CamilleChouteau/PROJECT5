@@ -67,10 +67,10 @@
           src="images/karsten-gohm-0_sMYmRHpro-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <h1 class="title">Informations pratiques</h1>
+        <h1 class="maintitle">Informations pratiques</h1>
       </section>
       <section class="section_infos">
-        <h2 class="title">Horaires</h2>
+        <h2 class="subtitle">Horaires</h2>
         <div class="container_text">
           <p>Lundi au jeudi</p>
           <p>10h // 18h</p>
@@ -78,13 +78,13 @@
           <p>10h // 20h</p>
         </div>
 
-        <h2 class="title">Tarifs</h2>
+        <h2 class="subtitle">Tarifs</h2>
         <div class="container_text">
           <p>Tarif plein : 16 euros</p>
           <p>Tarif réduit : 10 euros</p>
-          <p>Tarif famille (2 adutles et 2 enfants) : 46 euros</p>
+          <p>Tarif famille (2 adultes et 2 enfants) : 46 euros</p>
         </div>
-        <a href="#" class="button">Réservez vos billets</a>
+        <a href="#" class="button button_tickets">Réservez vos billets</a>
       </section>
 
       <section class="section_localisation">
@@ -101,8 +101,8 @@
         <p class="localisation_adress">IRL Museum</p>
         <p class="localisation_adress">3 boulevard Léon Bruteau 42000 Nantes</p>
 
-        <h4 class="subtitle">Accessibilité</h4>
-        <p>
+        <h3 class="subtitle">Accessibilité</h3>
+        <p class="localisation_adress">
           Situé au cœur de Nantes, nous nous engageons à éliminer les barrières
           physiques et sociales en proposant des installations adaptées pour les
           personnes en situations de handicap, telles que des rampes d'accès,
@@ -128,7 +128,39 @@
     </body>
 
     <footer class="footer">
-      <a href="infos.html" class="button">Contact</a>
+      <form>
+        <div class="container_text">
+          <h2 class="footer_subtitle">S'incrire à notre Newsletter</h2>
+          <p class="footer_subtext">
+            Inscrivez-vous à notre newsletter pour ne manquer aucun évènement,
+            concert ou exposition temporaire.
+          </p>
+        </div>
+
+        <div class="container_form">
+          <div class="form_area">
+            <input type="text" placeholder="Doe" name="lastname" required />
+            <input type="text" placeholder="John" name="firstame" required />
+            <input
+              type="text"
+              placeholder="johndoe@gmail.com"
+              name="mail"
+              required
+            />
+          </div>
+
+          <div class="form_button">
+            <label class="footer_subtext">
+              <input type="checkbox" checked="checked" name="subscribe" /> Daily
+              Newsletter
+            </label>
+            <button class="button_newslet" type="submit">
+              S'abonner à la newsletter
+            </button>
+          </div>
+        </div>
+      </form>
+
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-instagram icon"></i>Instagram</a
       >
@@ -138,6 +170,7 @@
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-facebook icon"></i>Facebook</a
       >
+      <a href="infos.html" class="button">Contact</a>
       <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>

@@ -20,7 +20,7 @@ img {
   max-width: 100%;
 }
 
-.title {
+.maintitle {
   padding: 2rem 0rem 3rem 0rem;
   font-size: 2.5rem;
   text-align: center;
@@ -39,7 +39,6 @@ img {
   text-decoration: none;
   color: var(--text_color);
   padding: 1.2rem 2rem 1rem 2rem;
-
   border: 1px solid var(--primary_color);
   border-radius: 2rem;
   transition: 0.6s;
@@ -257,16 +256,60 @@ img {
   font-size: 1.5rem;
   padding: 7rem 0rem 0rem 0rem;
 }
+.footer_subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 3rem 0rem;
+}
+
+.footer_subtext {
+  font-size: 1.5rem;
+  padding: 0rem 0rem 2rem 0rem;
+}
+.form_button {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0rem;
+}
+.form_area {
+  margin: 1rem 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_area input {
+  padding: 1rem;
+  margin: 0.6rem 0rem;
+  border-radius: 5px;
+  border: 1px solid var(--text_color);
+  background-color: var(--text_color);
+}
 
 .footer_hyperlink {
   text-decoration: none;
   color: var(--text_color);
   font-size: 1.4rem;
-  padding: 2rem 4rem 0rem 0rem;
+  padding: 1rem 4rem 3rem 0rem;
   transition: 0.3s;
   display: flex;
   align-items: center;
 }
 .footer_hyperlink:hover {
   color: var(--primary_color);
+}
+
+/* ---- BUTTON NEWSLETTER ----*/
+.button_newslet {
+  background-color: var(--background_color_light);
+  text-decoration: none;
+  color: var(--text_color);
+  padding: 1.2rem 2rem 1rem 2rem;
+  border: 1px solid var(--tertiary_color);
+  border-radius: 2rem;
+  transition: 0.6s;
+  font-size: 1.5rem;
+}
+.button_newslet:hover {
+  background-color: var(--tertiary_color);
+  opacity: 0.85;
 }

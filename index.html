@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/menu_burger.js"></script>
   </head>
+
   <body>
     <header class="header">
       <div id="root">
@@ -79,7 +80,7 @@
         />
       </div>
 
-      <h4 class="subtitle">Permanentes</h4>
+      <h3 class="subtitle">Permanentes</h3>
       <img
         class="expos_img"
         src="images/werner-du-plessis-6dDHofabCQ8-unsplash.jpg"
@@ -91,7 +92,7 @@
     </section>
 
     <section class="about">
-      <h5 class="title">A propos du musée IRL</h5>
+      <h3 class="title">A propos du musée IRL</h3>
       <img
         class="about_img"
         src="images/fe9a7468dad963d80c7c5e.webp"
@@ -107,7 +108,7 @@
     </section>
 
     <section class="localisation">
-      <h6 class="title">Où nous trouver ?</h6>
+      <h3 class="title">Où nous trouver ?</h3>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1355.2408836721652!2d-1.5646782!3d47.207155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685632925697!5m2!1sfr!2sfr"
         width="400"
@@ -123,7 +124,39 @@
     </section>
 
     <footer class="footer">
-      <a href="infos.html" class="button">Contact</a>
+      <form>
+        <div class="container_text">
+          <h2 class="footer_subtitle">S'incrire à notre Newsletter</h2>
+          <p class="footer_subtext">
+            Inscrivez-vous à notre newsletter pour ne manquer aucun évènement,
+            concert ou exposition temporaire.
+          </p>
+        </div>
+
+        <div class="container_form">
+          <div class="form_area">
+            <input type="text" placeholder="Doe" name="lastname" required />
+            <input type="text" placeholder="John" name="firstame" required />
+            <input
+              type="text"
+              placeholder="johndoe@gmail.com"
+              name="mail"
+              required
+            />
+          </div>
+
+          <div class="form_button">
+            <label class="footer_subtext">
+              <input type="checkbox" checked="checked" name="subscribe" /> Daily
+              Newsletter
+            </label>
+            <button class="button_newslet" type="submit">
+              S'abonner à la newsletter
+            </button>
+          </div>
+        </div>
+      </form>
+
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-instagram icon"></i>Instagram</a
       >
@@ -133,6 +166,7 @@
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-facebook icon"></i>Facebook</a
       >
+      <a href="infos.html" class="button">Contact</a>
       <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>

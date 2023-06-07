@@ -183,7 +183,39 @@
       </section>
     </body>
     <footer class="footer">
-      <a href="infos.html" class="button">Contact</a>
+      <form>
+        <div class="container_text">
+          <h2 class="footer_subtitle">S'incrire à notre Newsletter</h2>
+          <p class="footer_subtext">
+            Inscrivez-vous à notre newsletter pour ne manquer aucun évènement,
+            concert ou exposition temporaire.
+          </p>
+        </div>
+
+        <div class="container_form">
+          <div class="form_area">
+            <input type="text" placeholder="Doe" name="lastname" required />
+            <input type="text" placeholder="John" name="firstame" required />
+            <input
+              type="text"
+              placeholder="johndoe@gmail.com"
+              name="mail"
+              required
+            />
+          </div>
+
+          <div class="form_button">
+            <label class="footer_subtext">
+              <input type="checkbox" checked="checked" name="subscribe" /> Daily
+              Newsletter
+            </label>
+            <button class="button_newslet" type="submit">
+              S'abonner à la newsletter
+            </button>
+          </div>
+        </div>
+      </form>
+
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-instagram icon"></i>Instagram</a
       >
@@ -193,6 +225,7 @@
       <a class="footer_hyperlink" href="index.html"
         ><i class="fa-brands fa-facebook icon"></i>Facebook</a
       >
+      <a href="infos.html" class="button">Contact</a>
       <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>
