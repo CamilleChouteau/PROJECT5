@@ -20,11 +20,21 @@ img {
   max-width: 100%;
 }
 
-.maintitle {
+/* ---- HERO SECTION ---- */
+
+.main_title {
+  position: absolute;
+  top: 20%;
+  margin: 1rem 1rem 0rem 0rem;
   padding: 2rem 0rem 3rem 0rem;
-  font-size: 2.5rem;
-  text-align: center;
-  font-family: font_medium;
+  padding: 1.1rem 2rem;
+  font-size: 4.5rem;
+}
+
+.hero_section_img {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
 }
 
 .icon {
@@ -296,6 +306,23 @@ img {
 }
 .footer_hyperlink:hover {
   color: var(--primary_color);
+}
+
+.social_media {
+  padding: 5rem;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(112, 199, 237, 0.1);
+}
+
+.footer_checktext {
+  font-size: 1.3rem;
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.checkbox {
+  margin: 1rem;
 }
 
 /* ---- BUTTON NEWSLETTER ----*/
