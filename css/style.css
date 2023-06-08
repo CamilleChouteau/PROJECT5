@@ -7,7 +7,38 @@
   box-sizing: border-box;
 }
 
-/* -- GENERAL CSS CONTENT -- */
+/* ------------------------------------------ */
+/* ----------- VARIABLES + IMPORTS ---------- */
+/* ------------------------------------------ */
+
+:root {
+  font-size: 62.5%;
+
+  --text_color: #ece7d6;
+  --primary_color: #e34585;
+  --secondary_color: #70c7ed;
+  --tertiary_color: #6723b3;
+
+  --background_color: #05030e;
+  --background_color_light: #15202f;
+}
+
+@font-face {
+  font-family: font_medium;
+  src: url(/fonts/ITCAvantGardeStdMd.otf);
+}
+@font-face {
+  font-family: font_fine;
+  src: url(/fonts/ITCAvantGardeStdBk.otf);
+}
+@font-face {
+  font-family: font_bold;
+  src: url(/fonts/ITCAvantGardeStdBold.otf);
+}
+
+/* ------------------------------------------ */
+/* -------------- GENERAL CSS --------------- */
+/* ------------------------------------------ */
 
 body {
   background-color: var(--background_color);
@@ -20,22 +51,31 @@ img {
   max-width: 100%;
 }
 
-/* ---- HERO SECTION ---- */
+/* ------------------------------------------ */
+/* --------------- KEYFRAMES ---------------- */
+/* ------------------------------------------ */
 
-.main_title {
-  position: absolute;
-  top: 20%;
-  margin: 1rem 1rem 0rem 0rem;
-  padding: 2rem 0rem 3rem 0rem;
-  padding: 1.1rem 2rem;
-  font-size: 4.5rem;
+@keyframes expand {
+  from {
+    height: 360px;
+  }
+  to {
+    height: 680px;
+  }
 }
 
-.hero_section_img {
-  object-fit: cover;
-  width: 100%;
-  height: 30rem;
+@keyframes squeeze {
+  from {
+    height: 680px;
+  }
+  to {
+    height: 360px;
+  }
 }
+
+/* ------------------------------------------ */
+/* ------------------ ICONS ----------------- */
+/* ------------------------------------------ */
 
 .icon {
   padding: 0rem 2rem;
@@ -44,7 +84,10 @@ img {
   align-items: center;
 }
 
-/* ---- BUTTON ----*/
+/* ------------------------------------------ */
+/* ----------------- BUTTON ----------------- */
+/* ------------------------------------------ */
+
 .button {
   text-decoration: none;
   color: var(--text_color);
@@ -58,12 +101,18 @@ img {
   opacity: 0.85;
 }
 
-/* ---- HEADER ----*/
+/* ------------------------------------------ */
+/* ---------------- HEADER ------------------ */
+/* ------------------------------------------ */
 
 .header_hyperlink_logo {
   max-width: 13rem;
 }
-/* ---- NAV BAR ******************** */
+
+/* ------------------------------------------ */
+/* --------------- NAV BAR ------------------ */
+/* ------------------------------------------ */
+
 .topnav {
   background-color: var(--background_color);
   display: flex;
@@ -254,7 +303,248 @@ img {
   }
 }
 
-/* ---- FOOTER ----*/
+/* ------------------------------------------ */
+/* -------------- HERO SECTION -------------- */
+/* ------------------------------------------ */
+
+.main_title {
+  background-color: rgba(21, 32, 47, 0.3);
+  border-radius: 0px 20px 20px 0px;
+  backdrop-filter: blur(3px);
+  padding: 4rem;
+  font-size: 4rem;
+  text-align: center;
+  font-family: font_medium;
+  position: absolute;
+  top: 20%;
+  margin: 1rem 1rem 0rem 0rem;
+  padding: 2rem 0rem 3rem 0rem;
+  padding: 1.1rem 2rem;
+  font-size: 4.5rem;
+}
+
+.hero_section_img {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+/* ------------------------------------------ */
+/* ----------------- TITLES ----------------- */
+/* ------------------------------------------ */
+
+.title {
+  padding: 2rem 0rem 2rem 0rem;
+  font-size: 3rem;
+  text-align: center;
+  font-family: font_medium;
+}
+
+.subtitle {
+  padding: 2rem;
+  text-align: center;
+  padding: 2rem 1rem 2rem 2rem;
+  font-size: 2.3rem;
+  font-family: font_medium;
+}
+
+/* --------------- MAIN PAGE ---------------- */
+/* ------------- ACTUS SECTION -------------- */
+/* ------------------------------------------ */
+
+.expos_new {
+  font-size: 1.7rem;
+  background-color: rgba(5, 3, 13, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  position: absolute;
+  right: 0px;
+  margin: 1rem 1rem 0rem 0rem;
+  padding: 1.5rem 3rem;
+}
+
+.expos_img {
+  padding: 2rem 0rem;
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.expos_btn_container {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------------------ */
+/* ----------------- ABOUT ------------------ */
+/* ------------------------------------------ */
+
+.about {
+  margin: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+  padding: 4rem;
+}
+
+/* ------------------------------------------ */
+/* -------------- LOCALISATION -------------- */
+/* ------------------------------------------ */
+
+.localisation {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.localisation_adress {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+/* -------------- DISCOVER PAGE ------------- */
+/* ------------ EXPOS CATEGORIES ------------ */
+/* ------------------------------------------ */
+
+.section {
+  text-align: center;
+}
+
+.expo_title {
+  padding: 2rem;
+}
+.expo_text {
+  padding: 2rem;
+}
+
+#more {
+  display: none;
+}
+
+.icon_more {
+  font-size: 5rem;
+  transition: 0.6s;
+}
+
+.icon_more:hover {
+  color: var(--primary_color);
+  opacity: 0.85;
+}
+/* ------------------------------------------ */
+/* ------------ GRID DE LA CARD ------------- */
+/* ------------------------------------------ */
+.expo_card {
+  display: grid;
+  grid-template-rows: 60% 20% 20%;
+  object-fit: cover;
+  margin: 2rem 0rem;
+  width: 100%;
+  height: 30rem;
+}
+
+.new_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------------ */
+/* ----------- GRID DE LA SECTION ----------- */
+/* ------------------------------------------ */
+
+.section_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.section_squeezed_instant {
+  height: 360px;
+}
+
+.section_squeezed {
+  height: 360px;
+  animation: squeeze 0.4s;
+}
+
+.section_expanded {
+  height: 680px;
+  animation: expand 0.4s;
+}
+
+.more_btn {
+  cursor: pointer;
+}
+
+.perm_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------- ABOUT PAGE -------------- */
+/* ---------------- A PROPOS  --------------- */
+/* ------------------------------------------ */
+
+.section_about {
+  margin: 0rem 0rem 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+/* ---------------- INFOS PAGE -------------- */
+/* ------------ INFOS CATEGORIES ------------ */
+/* ------------------------------------------ */
+
+.text_bold {
+  font-family: font_bold;
+  padding: 0.5rem 0rem;
+}
+.section_infos {
+  text-align: center;
+  margin: 0rem 0rem 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+.container_text {
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+.section_localisation {
+  text-align: center;
+  margin: 0rem 0rem 2rem 1rem;
+}
+.localisation_adress {
+  margin: 1rem;
+}
+
+.section_faq {
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+.card_question {
+  padding: 0rem 0rem 1rem 2rem;
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/* ------------------ FOOTER ---------------- */
+/* ------------------------------------------ */
+
+.sm_title {
+  padding: 0rem 0rem 3rem 0rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: font_medium;
+}
+
 .footer {
   background-color: var(--background_color_light);
   padding: 3rem;

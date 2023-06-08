@@ -12,10 +12,8 @@
       src="https://kit.fontawesome.com/a0ec0fe392.js"
       crossorigin="anonymous"
     ></script>
-    <title>IRL | Accueil</title>
-    <link rel="stylesheet" href="css/variables.css" />
+    <title>IRL | A propos</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/about.css" />
     <script src="js/menu_burger.js"></script>
   </head>
   <body>
@@ -68,7 +66,7 @@
           src="images/71899600c35d3fbe47c795.webp"
           alt="Photo d'expositions"
         />
-        <h1 class="title">A propos</h1>
+        <h1 class="main_title">A propos</h1>
       </section>
 
       <section class="section_about">
@@ -78,7 +76,7 @@
           src="images/charlotte-coneybeer-JcJSeL3RmBY-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <p class="about_text">
+        <p class="text">
           Le musée IRL met en valeur des créations artistiques innovantes et
           accessibles, offrant une expérience immersive à tous les visiteurs,
           quels que soient leurs besoins spécifiques. Notre collection d'art
@@ -92,7 +90,7 @@
           src="images/rodolfo-cuadros-WNk-f-TnZDw-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <p class="about_text">
+        <p class="text">
           Nous sommes fiers de rendre l'art numérique accessible à tous, en
           créant un espace où l'expression artistique et l'inclusion se
           rencontrent harmonieusement. Que vous soyez passionné d'art digital ou
@@ -107,6 +105,7 @@
       </section>
     </body>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <form>
         <div class="container_text">
@@ -130,9 +129,14 @@
           </div>
 
           <div class="form_button">
-            <label class="footer_subtext">
-              <input type="checkbox" checked="checked" name="subscribe" /> Daily
-              Newsletter
+            <label class="footer_checktext">
+              <input
+                type="checkbox"
+                checked="checked"
+                name="subscribe"
+                class="checkbox"
+              />
+              J'accepte de recevoir des nouvelles des partenaires du musée IRL
             </label>
             <button class="button_newslet" type="submit">
               S'abonner à la newsletter
@@ -141,16 +145,19 @@
         </div>
       </form>
 
-      <a class="footer_hyperlink" href="index.html"
-        ><i class="fa-brands fa-instagram icon"></i>Instagram</a
-      >
-      <a class="footer_hyperlink" href="index.html"
-        ><i class="fa-brands fa-twitter icon"></i>Twitter</a
-      >
-      <a class="footer_hyperlink" href="index.html"
-        ><i class="fa-brands fa-facebook icon"></i>Facebook</a
-      >
-      <a href="infos.html" class="button">Contact</a>
+      <div class="social_media">
+        <h3 class="sm_title">Nos réseaux sociaux</h3>
+        <a class="footer_hyperlink" href="index.html"
+          ><i class="fa-brands fa-instagram icon"></i>Instagram</a
+        >
+        <a class="footer_hyperlink" href="index.html"
+          ><i class="fa-brands fa-twitter icon"></i>Twitter</a
+        >
+        <a class="footer_hyperlink" href="index.html"
+          ><i class="fa-brands fa-facebook icon"></i>Facebook</a
+        >
+        <a href="infos.html" class="button">Contact</a>
+      </div>
       <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>

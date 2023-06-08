@@ -12,10 +12,8 @@
       src="https://kit.fontawesome.com/a0ec0fe392.js"
       crossorigin="anonymous"
     ></script>
-    <title>IRL | Accueil</title>
-    <link rel="stylesheet" href="css/variables.css" />
+    <title>IRL | Informations pratiques</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/infos.css" />
     <script src="js/menu_burger.js"></script>
   </head>
   <body>
@@ -67,22 +65,25 @@
           src="images/karsten-gohm-0_sMYmRHpro-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <h1 class="maintitle">Informations pratiques</h1>
+        <h1 class="main_title">Informations pratiques</h1>
       </section>
       <section class="section_infos">
         <h2 class="subtitle">Horaires</h2>
         <div class="container_text">
-          <p>Lundi au jeudi</p>
+          <p class="text_bold">Lundi au jeudi</p>
           <p>10h // 18h</p>
-          <p>Vendredi au Dimanche</p>
+          <p class="text_bold">Vendredi au Dimanche</p>
           <p>10h // 20h</p>
         </div>
 
         <h2 class="subtitle">Tarifs</h2>
         <div class="container_text">
-          <p>Tarif plein : 16 euros</p>
-          <p>Tarif réduit : 10 euros</p>
-          <p>Tarif famille (2 adultes et 2 enfants) : 46 euros</p>
+          <p>Tarif plein :</p>
+          <p class="text_bold">16 euros</p>
+          <p>Tarif réduit :</p>
+          <p class="text_bold">10 euros</p>
+          <p>Tarif famille (2 adultes et 2 enfants) :</p>
+          <p class="text_bold">46 euros</p>
         </div>
         <a href="#" class="button button_tickets">Réservez vos billets</a>
       </section>
@@ -127,6 +128,7 @@
       </section>
     </body>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <form>
         <div class="container_text">
@@ -150,9 +152,14 @@
           </div>
 
           <div class="form_button">
-            <label class="footer_subtext">
-              <input type="checkbox" checked="checked" name="subscribe" /> Daily
-              Newsletter
+            <label class="footer_checktext">
+              <input
+                type="checkbox"
+                checked="checked"
+                name="subscribe"
+                class="checkbox"
+              />
+              J'accepte de recevoir des nouvelles des partenaires du musée IRL
             </label>
             <button class="button_newslet" type="submit">
               S'abonner à la newsletter
@@ -161,16 +168,19 @@
         </div>
       </form>
 
-      <a class="footer_hyperlink" href="index.html"
-        ><i class="fa-brands fa-instagram icon"></i>Instagram</a
-      >
-      <a class="footer_hyperlink" href="index.html"
-        ><i class="fa-brands fa-twitter icon"></i>Twitter</a
-      >
-      <a class="footer_hyperlink" href="index.html"
-        ><i class="fa-brands fa-facebook icon"></i>Facebook</a
-      >
-      <a href="infos.html" class="button">Contact</a>
+      <div class="social_media">
+        <h3 class="sm_title">Nos réseaux sociaux</h3>
+        <a class="footer_hyperlink" href="index.html"
+          ><i class="fa-brands fa-instagram icon"></i>Instagram</a
+        >
+        <a class="footer_hyperlink" href="index.html"
+          ><i class="fa-brands fa-twitter icon"></i>Twitter</a
+        >
+        <a class="footer_hyperlink" href="index.html"
+          ><i class="fa-brands fa-facebook icon"></i>Facebook</a
+        >
+        <a href="infos.html" class="button">Contact</a>
+      </div>
       <p class="footer_text">2023 Copyright Camille Chouteau</p>
     </footer>
   </body>
