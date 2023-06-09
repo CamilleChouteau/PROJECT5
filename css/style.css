@@ -309,7 +309,7 @@ img {
 
 .main_title {
   background-color: rgba(21, 32, 47, 0.3);
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 10px 10px 0px;
   backdrop-filter: blur(3px);
   padding: 4rem;
   font-size: 4rem;
@@ -354,7 +354,8 @@ img {
 
 .expos_new {
   font-size: 1.7rem;
-  background-color: rgba(5, 3, 13, 0.3);
+  font-family: font_medium;
+  background-color: rgba(227, 69, 133, 0.6);
   backdrop-filter: blur(4px);
   border-radius: 20px;
   position: absolute;
@@ -583,7 +584,7 @@ img {
 .footer_subtitle {
   text-align: center;
   font-size: 2.5rem;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .footer_subtext {
@@ -593,17 +594,16 @@ img {
 .form_button {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0rem;
+  padding: 1rem 4rem 3rem 4rem;
 }
 .form_area {
-  margin: 1rem 10rem;
+  margin: 0rem 10rem;
   display: flex;
   flex-direction: column;
 }
 
 .form_area input {
   padding: 1rem;
-  margin: 0.6rem 0rem;
   border-radius: 5px;
   border: 1px solid var(--text_color);
   background-color: var(--text_color);
@@ -654,3 +654,7 @@ img {
   background-color: var(--tertiary_color);
   opacity: 0.85;
 }
+
+/* --------------------------- MEDIA QUERIES ----------------------- */
+/* -------------------------- DESKTOP VERSION ---------------------- */
+/* ----------------------------------------------------------------- */
