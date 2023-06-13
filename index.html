@@ -73,22 +73,26 @@
     </section>
     <section class="actu_section">
       <h2 class="title">Nos expositions</h2>
-      <h3 class="subtitle">En ce moment</h3>
-      <div class="expos_card">
-        <p class="expos_new">Nouveauté</p>
+      <div class="actu_grid">
+        <h3 id="sub_new" class="subtitle">En ce moment</h3>
+        <div id="img_new" class="expos_card">
+          <p class="expos_new">Nouveauté</p>
+          <img
+            class="expos_img"
+            src="images/alina-grubnyak-uhHPgq6QFgE-unsplash.jpg"
+            alt="Photo d'expositions"
+          />
+        </div>
+
+        <h3 id="sub_perm" class="subtitle">Permanentes</h3>
         <img
+          id="img_perm"
           class="expos_img"
-          src="images/alina-grubnyak-uhHPgq6QFgE-unsplash.jpg"
+          src="images/werner-du-plessis-6dDHofabCQ8-unsplash.jpg"
           alt="Photo d'expositions"
         />
       </div>
 
-      <h3 class="subtitle">Permanentes</h3>
-      <img
-        class="expos_img"
-        src="images/werner-du-plessis-6dDHofabCQ8-unsplash.jpg"
-        alt="Photo d'expositions"
-      />
       <div class="expos_btn_container">
         <a href="decouvrir.html" class="button">Découvrir nos expositions</a>
       </div>
@@ -113,9 +117,8 @@
     <section class="localisation">
       <h3 class="title">Où nous trouver ?</h3>
       <iframe
+        class="map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1355.2408836721652!2d-1.5646782!3d47.207155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685632925697!5m2!1sfr!2sfr"
-        width="400"
-        height="300"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -128,7 +131,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <form>
+      <form class="container_newsletter">
         <div class="container_text">
           <h2 class="footer_subtitle">S'inscrire à notre Newsletter</h2>
           <p class="footer_subtext text">
