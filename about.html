@@ -70,13 +70,14 @@
       </section>
 
       <section class="section_about">
-        <h2 class="subtitle">Notre vision de l'art</h2>
+        <h2 id="about_first_title" class="subtitle">Notre vision de l'art</h2>
         <img
+          id="about_first_img"
           class="hero_section_img"
           src="images/charlotte-coneybeer-JcJSeL3RmBY-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <p class="text">
+        <p id="about_first_text" class="text">
           Le musée IRL met en valeur des créations artistiques innovantes et
           accessibles, offrant une expérience immersive à tous les visiteurs,
           quels que soient leurs besoins spécifiques. Notre collection d'art
@@ -84,13 +85,14 @@
           multisensorielle, avec des descriptions détaillées, des aides à la
           navigation et des outils de communication adaptés.
         </p>
-        <h2 class="subtitle">Nos valeurs</h2>
+        <h2 id="about_second_title" class="subtitle">Nos valeurs</h2>
         <img
+          id="about_second_img"
           class="hero_section_img"
           src="images/rodolfo-cuadros-WNk-f-TnZDw-unsplash.jpg"
           alt="Photo d'expositions"
         />
-        <p class="text">
+        <p id="about_second_text" class="text">
           Nous sommes fiers de rendre l'art numérique accessible à tous, en
           créant un espace où l'expression artistique et l'inclusion se
           rencontrent harmonieusement. Que vous soyez passionné d'art digital ou
@@ -99,7 +101,7 @@
           où chacun est invité à explorer et à célébrer la beauté de l'art
           digital, sans aucune limitation.
         </p>
-        <a href="infos.html" class="button button_infos"
+        <a id="about_btn" href="infos.html" class="button button_infos"
           >Informations pratiques</a
         >
       </section>
@@ -107,7 +109,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <form>
+      <form class="container_newsletter">
         <div class="container_text">
           <h2 class="footer_subtitle">S'inscrire à notre Newsletter</h2>
           <p class="footer_subtext text">
@@ -127,15 +129,7 @@
           </div>
 
           <div class="form_button">
-            <label class="footer_checktext">
-              <input
-                type="checkbox"
-                checked="checked"
-                name="subscribe"
-                class="checkbox"
-              />
-              J'accepte de recevoir des nouvelles des partenaires du musée IRL
-            </label>
+            <label class="footer_checktext"> </label>
             <button class="button_newslet" type="submit">
               S'abonner à la newsletter
             </button>

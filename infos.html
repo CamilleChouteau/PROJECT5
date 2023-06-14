@@ -67,42 +67,49 @@
         />
         <h1 class="main_title">Informations pratiques</h1>
       </section>
-      <section class="section_infos">
-        <h2 class="subtitle">Horaires</h2>
-        <div class="container_text">
-          <p class="text_bold">Lundi au jeudi</p>
-          <p>10h // 18h</p>
-          <p class="text_bold">Vendredi au Dimanche</p>
-          <p>10h // 20h</p>
-        </div>
 
-        <h2 class="subtitle">Tarifs</h2>
-        <div class="container_text">
-          <p>Tarif plein :</p>
-          <p class="text_bold">16 euros</p>
-          <p>Tarif réduit :</p>
-          <p class="text_bold">10 euros</p>
-          <p>Tarif famille (2 adultes et 2 enfants) :</p>
-          <p class="text_bold">46 euros</p>
-        </div>
-        <a href="#" class="button button_tickets">Réservez vos billets</a>
-      </section>
+      <div class="container_infos">
+        <section class="section_infos">
+          <h2 class="subtitle">Horaires</h2>
+          <div class="container_text">
+            <p class="text_bold">Lundi au jeudi</p>
+            <p>10h // 18h</p>
+            <p class="text_bold">Vendredi au Dimanche</p>
+            <p>10h // 20h</p>
+          </div>
 
-      <section class="section_localisation">
-        <h3 class="title">Où nous trouver ?</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1355.2408836721652!2d-1.5646782!3d47.207155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685632925697!5m2!1sfr!2sfr"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <p class="localisation_adress text_name_adress">IRL Museum</p>
-        <p class="localisation_adress text_adress">3 boulevard Léon Bruteau</p>
-        <p class="localisation_adress text_adress">42000 Nantes</p>
+          <h2 class="subtitle">Tarifs</h2>
+          <div class="container_text">
+            <p>Tarif plein :</p>
+            <p class="text_bold">16 euros</p>
+            <p>Tarif réduit :</p>
+            <p class="text_bold">10 euros</p>
+            <p>Tarif famille (2 adultes et 2 enfants) :</p>
+            <p class="text_bold">46 euros</p>
+          </div>
+          <a href="#" class="button button_tickets">Réservez vos billets</a>
+        </section>
 
+        <section class="section_localisation">
+          <h3 class="title">Où nous trouver ?</h3>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1355.2408836721652!2d-1.5646782!3d47.207155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0135e8006d%3A0x3fa8f8f5f3c66019!2s3%20Bd%20L%C3%A9on%20Bureau%2C%2044200%20Nantes!5e0!3m2!1sfr!2sfr!4v1685632925697!5m2!1sfr!2sfr"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="localisation_adress text_name_adress">IRL Museum</p>
+          <p class="localisation_adress text_adress">
+            3 boulevard Léon Bruteau
+          </p>
+          <p class="localisation_adress text_adress">42000 Nantes</p>
+        </section>
+      </div>
+      <section class="accessibility">
         <h3 class="subtitle">Accessibilité</h3>
         <p class="localisation_adress text">
           Situé au cœur de Nantes, nous nous engageons à éliminer les barrières
@@ -149,7 +156,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <form>
+      <form class="container_newsletter">
         <div class="container_text">
           <h2 class="footer_subtitle">S'inscrire à notre Newsletter</h2>
           <p class="footer_subtext text">
@@ -169,15 +176,7 @@
           </div>
 
           <div class="form_button">
-            <label class="footer_checktext">
-              <input
-                type="checkbox"
-                checked="checked"
-                name="subscribe"
-                class="checkbox"
-              />
-              J'accepte de recevoir des nouvelles des partenaires du musée IRL
-            </label>
+            <label class="footer_checktext"> </label>
             <button class="button_newslet" type="submit">
               S'abonner à la newsletter
             </button>
