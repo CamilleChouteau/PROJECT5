@@ -1,17 +1,17 @@
-function toggleExpand(idToToggle, idMoreIcon) {
+function toggleExpand(idToToggle, idMoreIcon, classPrefix) {
   var section = document.getElementById(idToToggle);
-  var needToExpand = !section.classList.contains("section_expanded");
+  var needToExpand = !section.classList.contains(classPrefix + "_expanded");
 
   var moreIcon = document.getElementById(idMoreIcon);
 
   if (needToExpand) {
-    section.classList.remove("section_squeezed");
-    section.classList.remove("section_squeezed_instant");
-    section.classList.add("section_expanded");
+    section.classList.remove(classPrefix + "_squeezed");
+    section.classList.remove(classPrefix + "_squeezed_instant");
+    section.classList.add(classPrefix + "_expanded");
     moreIcon.style.transform = "rotate(180deg)";
   } else {
-    section.classList.remove("section_expanded");
-    section.classList.add("section_squeezed");
+    section.classList.remove(classPrefix + "_expanded");
+    section.classList.add(classPrefix + "_squeezed");
     moreIcon.style.transform = "rotate(0deg)";
   }
 }

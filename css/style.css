@@ -73,6 +73,24 @@ img {
   }
 }
 
+@keyframes desktop_expand {
+  from {
+    height: 560px;
+  }
+  to {
+    height: 1120px;
+  }
+}
+
+@keyframes desktop_squeeze {
+  from {
+    height: 1120px;
+  }
+  to {
+    height: 560px;
+  }
+}
+
 /* ------------------------------------------ */
 /* ------------------ ICONS ----------------- */
 /* ------------------------------------------ */
@@ -546,7 +564,9 @@ img {
 }
 
 .card_question {
+  overflow: hidden;
   padding: 0rem 2rem 1rem 2rem;
+  transition: height 0.4s;
 }
 
 .text_question {
@@ -559,6 +579,46 @@ img {
 
 .text_answer {
   line-height: 2.5rem;
+}
+
+.question1_squeezed_instant {
+  height: 100px;
+}
+.question2_squeezed_instant {
+  height: 90px;
+}
+.question3_squeezed_instant {
+  height: 65px;
+}
+
+.question1_squeezed {
+  height: 100px;
+}
+
+.question2_squeezed {
+  height: 90px;
+}
+
+.question3_squeezed {
+  height: 65px;
+}
+
+.question1_expanded {
+  height: 150px;
+}
+
+.question2_expanded {
+  height: 150px;
+}
+
+.question3_expanded {
+  height: 150px;
+}
+
+.more_question_btn {
+  display: block;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* ------------------------------------------ */
@@ -830,30 +890,23 @@ img {
   /* ------------ EXPOS CATEGORIES ------------ */
   /* ------------------------------------------ */
 
-  .section {
-    text-align: center;
+  .expo_card {
+    grid-template-rows: 80% 10% 10%;
+    height: 50rem;
   }
 
-  .expo_title {
-    font-family: font_bold;
-    padding: 2rem;
-  }
-  .expo_text {
-    padding: 2rem;
+  .section_squeezed_instant {
+    height: 560px;
   }
 
-  #more {
-    display: none;
+  .section_squeezed {
+    height: 560px;
+    animation: desktop_squeeze 0.4s;
   }
 
-  .icon_more {
-    font-size: 5rem;
-    transition: 0.6s;
-  }
-
-  .icon_more:hover {
-    color: var(--primary_color);
-    opacity: 0.85;
+  .section_expanded {
+    height: 1120px;
+    animation: desktop_expand 0.4s;
   }
 
   /* ---------------- INFOS PAGE -------------- */
@@ -914,6 +967,40 @@ img {
   .text_answer {
     font-size: 1.8rem;
     line-height: 2rem;
+  }
+
+  .question1_squeezed_instant {
+    height: 85px;
+  }
+  .question2_squeezed_instant {
+    height: 60px;
+  }
+  .question3_squeezed_instant {
+    height: 60px;
+  }
+
+  .question1_squeezed {
+    height: 85px;
+  }
+
+  .question2_squeezed {
+    height: 60px;
+  }
+
+  .question3_squeezed {
+    height: 60px;
+  }
+
+  .question1_expanded {
+    height: 120px;
+  }
+
+  .question2_expanded {
+    height: 120px;
+  }
+
+  .question3_expanded {
+    height: 120px;
   }
 
   /* ------------------------------------------ */

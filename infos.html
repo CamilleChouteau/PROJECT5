@@ -15,6 +15,7 @@
     <title>IRL | Informations pratiques</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/menu_burger.js"></script>
+    <script src="js/readmore.js"></script>
   </head>
   <body>
     <header class="header">
@@ -121,17 +122,29 @@
 
       <section class="section_faq">
         <h3 class="title">Foire aux questions</h3>
-        <div class="card_question">
+        <div id="questionOne" class="card_question question1_squeezed_instant">
           <p class="text_question">
             Je souhaite visiter plusieurs expositions ou une exposition et les
             collections permanentes du musée, dois-je acheter plusieurs billets
             ?
           </p>
+
           <p class="text_answer">
             Non ce n’est pas nécessaire, un seul billet suffit.
           </p>
         </div>
-        <div class="card_question">
+        <a
+          class="more_question_btn"
+          onclick='toggleExpand("questionOne", "moreIconQuestionOne", "question1")'
+        >
+          <span
+            id="moreIconQuestionOne"
+            class="material-symbols-outlined icon_more"
+          >
+            expand_more
+          </span>
+        </a>
+        <div id="questionTwo" class="card_question question2_squeezed_instant">
           <p class="text_question">
             Je n’arrive pas à imprimer mon billet, est-il obligatoire d’imprimer
             son billet ?
@@ -141,7 +154,21 @@
             présenter votre billet sur smartphone le jour de la visite.
           </p>
         </div>
-        <div class="card_question">
+        <a
+          class="more_question_btn"
+          onclick='toggleExpand("questionTwo", "moreIconQuestionTwo", "question2")'
+        >
+          <span
+            id="moreIconQuestionTwo"
+            class="material-symbols-outlined icon_more"
+          >
+            expand_more
+          </span>
+        </a>
+        <div
+          id="questionThree"
+          class="card_question question3_squeezed_instant"
+        >
           <p class="text_question">
             Puis-je venir avec mon animal de compagnie ?
           </p>
@@ -151,6 +178,17 @@
             d’aveugles ou chiens d’assistance.
           </p>
         </div>
+        <a
+          class="more_question_btn"
+          onclick='toggleExpand("questionThree", "moreIconQuestionThree", "question3")'
+        >
+          <span
+            id="moreIconQuestionThree"
+            class="material-symbols-outlined icon_more"
+          >
+            expand_more
+          </span>
+        </a>
       </section>
     </body>
 
