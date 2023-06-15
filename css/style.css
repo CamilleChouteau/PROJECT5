@@ -654,6 +654,7 @@ img {
 
 .footer_subtext {
   font-size: 1.5rem;
+  padding: 0rem;
 }
 .form_button {
   padding: 1rem 4rem 3rem 4rem;
@@ -1028,7 +1029,8 @@ img {
 
   .footer_subtext {
     font-size: 1.6rem;
-    padding: 1rem;
+    padding: 0rem;
+    padding-top: 1rem;
   }
 
   .container_form {
