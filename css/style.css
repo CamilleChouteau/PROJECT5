@@ -742,7 +742,7 @@ img {
     border-radius: 3rem;
   }
   .button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
   }
 
   /* ------------------------------------------ */
@@ -970,7 +970,7 @@ img {
   }
 
   .question1_squeezed_instant {
-    height: 85px;
+    height: 65px;
   }
   .question2_squeezed_instant {
     height: 60px;
@@ -980,7 +980,7 @@ img {
   }
 
   .question1_squeezed {
-    height: 85px;
+    height: 65px;
   }
 
   .question2_squeezed {
@@ -1054,6 +1054,6 @@ img {
     font-size: 2rem;
   }
   .button_newslet:hover {
-    scale: 1.1;
+    transform: scale(1.1);
   }
 }
