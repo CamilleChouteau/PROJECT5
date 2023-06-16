@@ -25,15 +25,15 @@
 
 @font-face {
   font-family: font_medium;
-  src: url("/fonts/ITCAvantGardeStdMd.otf");
+  src: url("../fonts/ITCAvantGardeStdMd.otf");
 }
 @font-face {
   font-family: font_fine;
-  src: url("/fonts/ITCAvantGardeStdBk.otf");
+  src: url("../fonts/ITCAvantGardeStdBk.otf");
 }
 @font-face {
   font-family: font_bold;
-  src: url("/fonts/ITCAvantGardeStdBold.otf");
+  src: url("../fonts/ITCAvantGardeStdBold.otf");
 }
 
 /* ------------------------------------------ */
